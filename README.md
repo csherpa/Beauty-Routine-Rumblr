@@ -4,8 +4,8 @@ To create a fullstack simple blog website that enables someone to sign up for an
 ## Summary:
 A blog, or weblog, is a platform where you can share information about a particular topic usually displayed much like diary entries in reverse chronological order.
 ### Login:
-* Username : nycda
-* Passoword : 12345
+In order to login, Plese create your own account and share your own beauty secrets!
+
 ## Completion Requirements:
 The completed assignment should:
 
