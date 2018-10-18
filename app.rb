@@ -6,7 +6,7 @@ require './models/post.rb'
 require './models/user.rb'
 
 enable :sessions
-set :database, {adapter: 'postgresql', database: 'r-umblr_blog'}
+# set :database, {adapter: 'postgresql', database: 'r-umblr_blog'}
 
 get '/' do 
     if session[:user_id] 
