@@ -1,0 +1,45 @@
+
+<div class= 'create'style='margin-left: 500px'>
+  <div class="row">
+    <div class="col-8">
+      <h2>Create a new post</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <form action="/create_post" method="POST">
+
+        <div class="row">
+          <div class="col-8">
+            <label for="title">Title</label>
+            <input type="text" name="post_name" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <label for="">Post</label>
+            <textarea cols="30" rows="10" name="post_info" class="form-control"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <a href="/">
+              <button type="button" action="/" name="cancel" class="btn btn-outline-secondary btn-sm current_btn">
+                Cancel
+              </button>
+            </a>
+
+            <button type="submit" name="sign_up" class="btn btn-outline-success btn-sm current_btn">
+              Create Post
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  
+</div>

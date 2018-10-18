@@ -1,0 +1,37 @@
+<div class="container">
+    <div>   
+        <h2>Welcome back,<%= User.find(session[:user_id]).username%></h2>
+        <img src="http://www.taniaestevez.com/wp-content/uploads/2016/11/makeup_beauty.jpg" width= '600px' style = "margin-left: 260px">
+    </div>
+
+    <h4>All Posts</h4>
+    <ul>
+        <% @posts.each do |post|%>
+        <li class="border">
+            <p>
+                <span class="bold"><%= post.post_name %></span>
+                <span class="float-right">
+                    <span>Created by: </span><span class="bold"><%= User.find(post.user_id).username %></span>
+                </span>
+            </p> 
+            <p> 
+            <%= post.post_info%> 
+            </p>
+        </li>
+        <% end %>        
+    </ul>
+</div>
+        
+<div id= 'footer'>
+    <nav class="navbar navbar bg-light">
+        <p class="navbar-brand">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </p>
+        <div class="copyright">
+        &copy;2018 Rumblr Inc.
+        </div>
+    </nav>
+</div>
+  

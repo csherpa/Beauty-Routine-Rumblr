@@ -1,0 +1,39 @@
+
+<div class="container account-element center">
+    <div class="row">
+      <h2 class="margin-auto">My Account</h2>
+    </div>
+    <div class="row account-row">
+      <div class="col-6 align-right">
+        <span class="bold">Username: <%= @user.username %></span> <br>
+        <span class="bold">Email Address: <%= @user.email %></span> <br>
+        <span class="bold">First Name: <%= @user.firstname %></span> <br>
+        <span class="bold">Last Name: <%= @user.lastname %></span> <br>
+        <span class="bold">Birthday: <%= @user.birthday %></span> <br>
+      </div>
+      <div class="col-6 align-left">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <a href="/users/<%=@user.id%>/edit">
+      <button type="submit" name="edit_account" class="btn btn-outline-info btn-sm current_btn">
+        Edit Account
+      </button>
+    </a>
+
+    <a href="/signout">
+      <button type="submit" name="log_out" class="btn btn-outline-secondary btn-sm current_btn">
+        Log Out
+      </button>
+    </a>
+
+    
+    <a href="/">
+      <button type="submit" name="home" class="btn btn-outline-secondary btn-sm current_btn">
+        Back
+      </button>
+    </a>
+
+</div>

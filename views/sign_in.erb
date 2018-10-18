@@ -1,0 +1,38 @@
+
+<div class="container">
+<h2>Log in</h2>
+
+<div class="form-row form-horizontal form-element">
+
+  <form action="/signin" method="POST" class="form-group">
+    <div class="form-group row">
+      <label for="username" class="col-sm-6 col-form-label">Username</label>
+      <input type="text" name="username" class="col-sm-6 form-control" placeholder="username" required>
+      <small id="usernameHelp" class="form-text text-muted form-helper italic">"nycda"</small>
+      <br>
+    </div>
+
+    <div class="form-group row">
+      <label for="password" class="col-sm-6 col-form-label">Password</label><br>
+      <input type="password" name="password" class="col-sm-6 form-control" placeholder="**********" required>
+      <small id="passwordHelp" class="form-text text-muted form-helper italic">"12345"</small>
+      <br>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <a href="/"><button type="button" class="btn btn-outline-secondary btn-sm current_btn">Cancel</button></a>
+        <button type="submit" class="btn btn-outline-success btn-sm current_btn">Log In</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div>
+  <div class="form-group row">
+    <div class ="col-sm-10">
+      <p>Don't have an account? <a href="/signup">Sign up</a> for one.</p>
+    </div>
+  </div>
+</div>
+</div>

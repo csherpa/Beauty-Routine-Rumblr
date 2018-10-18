@@ -1,0 +1,68 @@
+
+<h3>Update Account</h3>
+<div class="container margin-top">
+  <div class="form-row form-horizontal form-element">
+        <form method="POST" action="/users/<%= @current_user.id%>"> 
+
+            <input type="hidden" name="_method" value="PUT">
+            <div>
+
+            <div class="form-group row">
+                <label for="username" class="col-sm-6 col-form-label">Username</label>
+                <input type="text" name="username" class="col-sm-6 form-control" placeholder="username" value="<%= @current_user.username%>">
+            </div>
+
+            <div class="form-group row">
+                <label for="password" class="col-sm-6 col-form-label">Password</label>
+                <input type="password" name="password" class="col-sm-6 form-control" id="password" value=<%= @user.password %>><br>
+            </div>
+
+            <div class="form-group row">
+                <label for="email" class="col-sm-6 col-form-label">Email Address</label>
+                <input type="email" name="email" class="col-sm-6 form-control" value=<%= @user.email %>><br>
+            </div>
+
+            <div class="form-group row">
+                <label for="firstname" class="col-sm-6 col-form-label">First Name</label>
+                <input type="text" name="firstname" class="col-sm-6 form-control" value=<%= @user.firstname%>><br>
+            </div>
+
+            <div class="form-group row">
+                <label for="lastname" class="col-sm-6 col-form-label">Last Name</label>
+                <input type="text" name="lastname" class="col-sm-6 form-control" value=<%= @user.lastname%>><br>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="birthday" class="col-sm-6 col-form-label">Birthday</label>
+                <input type="date" name="birthday" class="col-sm-6 form-control" value=<%= @user.birthday%>><br>
+            </div>
+
+            <a href="/">
+            <button type="button" action="/" name="cancel" class="btn btn-outline-secondary btn-sm current_btn">
+                Cancel
+            </button>
+            </a>
+
+            <button type="submit" name="edit_account" class="btn btn-outline-success btn-sm current_btn" id="save_btn">
+                Save Updates
+            </button>
+        
+        </form>
+        <form method="POST" action="/users/<%= @current_user.id %>">
+            <input type="hidden" name="_method" value="DELETE">
+            <input class="input-btn" type="submit" class="btn btn-outline-danger btn-sm current_btn" value="Delete Account">
+        </form>
+    </div>
+  
+</div> 
+
+
+
+
+    
+      
+      
+        
+
+    
